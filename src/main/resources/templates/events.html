@@ -1,0 +1,55 @@
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Events</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"/>
+</head>
+<body>
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <h1> Events </h1>
+        </div>
+    </div>
+    <a th:href="@{/edit-add-event}">
+        <button type="button" class="btn btn-success">Add Event</button>
+    </a>
+    <div class="row">
+        <div class="col-md-6">
+            <table class="table">
+                <thead>
+                <tr>
+                    <!--
+                     <th>Id</th>
+                    -->
+                    <th>Name</th>
+                    <th>Date</th>
+                    <th>Actions</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr th:if="${events.empty}">
+                    <td colspan="2"> No Events Available</td>
+                </tr>
+                <tr th:each="event : ${events}">
+                    <!--
+                    <td><span th:text="${event.id}"> Id </span></td>
+                    -->
+                    <td><span th:text="${event.name}"> Name </span></td>
+                    <td><span th:text="${#temporals.format(event.date, 'dd-MM-yyyy HH:mm')}"> Date </span></td>
+                    <td>
+                        <a th:href="@{/delete-event/{id}(id=${event.id})}">
+                            <button type="button" class="btn btn-danger">Delete</button>
+                        </a>
+                        <a th:href="@{/edit-add-event/{id}(id=${event.id})}">
+                            <button type="button" class="btn btn-primary">Edit</button>
+                        </a>
+
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+</body>
+</html>
