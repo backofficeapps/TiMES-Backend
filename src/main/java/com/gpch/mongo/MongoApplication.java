@@ -8,6 +8,7 @@ import lombok.extern.slf4j.Slf4j;
 import org.springframework.boot.CommandLineRunner;
 
 import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Import;
 
 import java.time.LocalDateTime;
 import java.util.Arrays;
@@ -27,7 +28,7 @@ public class MongoApplication {
 		return (args) -> {
 			//log.info("Generating sample data");
 			eventService.deleteAllEvents();
-			List<String> events = Arrays.asList("Bob", "Peter", "Gus", "John", "David");
+			List<String> events = Arrays.asList("State Wrestling", "State Volleyball", "State Frisbee", "State Cheer", "State Soccer");
 			events.forEach(event ->
 					eventService.saveEvent(Event.builder()
 							.name(event)
@@ -35,7 +36,7 @@ public class MongoApplication {
 							.build()) );
 
 			eventService.getAllEvents().forEach(event ->
-					log.info("RESERVATION --> " + event.getName() + " ID: " + event.getId()));
+					log.info("Event --> " + event.getName() + " ID: " + event.getId()));
 		};
 	}
 }

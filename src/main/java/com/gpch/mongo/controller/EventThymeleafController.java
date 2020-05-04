@@ -29,6 +29,12 @@ public class EventThymeleafController {
         return "events";
     }
 
+    @GetMapping("/events-ui2")
+    public String events2(Model model) {
+        model.addAttribute("events", eventService.getAllEvents());
+        return "events2";
+    }
+
     @GetMapping("/delete-event/{id}")
     public String removeEvent(@PathVariable("id") String id, Model model) {
         eventService.deleteEventById(id);
