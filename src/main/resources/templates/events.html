@@ -22,7 +22,10 @@
                      <th>Id</th>
                     -->
                     <th>Name</th>
+                    <th>Event Type</th>
+                    <th>Event Location</th>
                     <th>Date</th>
+                    <th>Event Time</th>
                     <th>Actions</th>
                 </tr>
                 </thead>
@@ -34,8 +37,11 @@
                     <!--
                     <td><span th:text="${event.id}"> Id </span></td>
                     -->
-                    <td><span th:text="${event.name}"> Name </span></td>
+                    <td><span th:text="${event.event_name}"> Name </span></td>
+                    <td><span th:text="${event.event_type}">Event Type </span></td>
+                    <td><span th:text="${event.location_street_number}"><span th:text="${event.event_location_street_name}">Location </span></span>
                     <td><span th:text="${#temporals.format(event.date, 'dd-MM-yyyy HH:mm')}"> Date </span></td>
+                    <td><span th:text="${event.event_time}">Event Time </span></td>
                     <td>
                         <a th:href="@{/delete-event/{id}(id=${event.id})}">
                             <button type="button" class="btn btn-danger">Delete</button>
