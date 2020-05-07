@@ -62,16 +62,9 @@ public class MongoApplication {
 	@Bean
 	public CommandLineRunner setup(EventService eventService, UserService userService, PhoneService phoneService, 
 			EmailService emailService, UserJobService userJobService, JobService jobService) {
+		// This is a generic action meant to execute on start up. 
 		return (args) -> {
-			//log.info("Generating sample data");
 			eventService.deleteAllEvents();
-			//List<String> events = Arrays.asList("Bob", "Peter", "Gus", "John", "David");
-			/*events.forEach(event ->
-					eventService.saveEvent(Event.builder()
-							.event_name(event)
-							.date(LocalDateTime.now())
-							.build()) );
-			*/
 			
 		};
 	}
