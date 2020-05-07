@@ -53,10 +53,12 @@ public class iCalParser extends Thread {
 
                 /**
                  * HELPFUL ICAL ELEMENTS:
+                 * LOCATION is the venue of the event (may be blank)
                  * SUMMARY is the name of the event
                  * DESCRIPTION is parameters of the event
                  * COMMENTS inlcude notes on events
                  * DTSTART is the parameter for the actual date (may also include time)
+                 * DTEND is the parameter for the date end (may also include time)
                  */
 
                 FileInputStream fin = new FileInputStream("icalData.ics");
