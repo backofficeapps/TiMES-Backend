@@ -23,6 +23,13 @@ public class Job {
 	@NotBlank(message="Job Type: ")
 	private String job_type;
 	
+	/**
+	 * @author Gage Hoefer
+	 * @param None
+	 * @return String
+	 * 
+	 * This method returns the type for the Job object. 
+	 */
 	public String getJobType() {
 		return this.job_type;
 	}
