@@ -1,0 +1,18 @@
+[
+  {
+    "event": {
+      "name": "Football Game",
+      "sport": "Football",
+      "jobs": "tickets, ref, snacks",
+      "day": "monday"
+    }
+  },
+  {
+    "event": {
+      "name": "Basketball Game",
+      "sport": "Basketball",
+      "jobs": "ref, PA",
+      "day": "saturday"
+    }
+  }
+]

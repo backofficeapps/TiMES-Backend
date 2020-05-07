@@ -1,0 +1,18 @@
+[
+  {
+    "employee": {
+      "name": "Randy",
+      "sports": "Football",
+      "jobs": "tickets",
+      "days_aval": "monday, tuesday, wednesday"
+    }
+  },
+  {
+    "employee": {
+      "name": "Brian",
+      "sports": "Basketball",
+      "jobs": "ref",
+      "days_aval": "friday, saturday, sunday"
+    }
+  }
+]
