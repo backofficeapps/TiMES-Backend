@@ -26,6 +26,8 @@ Maven Install
 >  By nature of design, this application is modular and self-containing. This design choice lends itself to less setup requirements for an end user apart from the two core requirements specified above.
 In order to install the dependencies using Maven a user then has to run Maven → Clean and Maven → Install commands to acquire all other dependencies before running the project for the first time. Since this application is a Spring Maven enabled program, all other dependencies will be installed during this process.
 
+## Documentation:
+> To access the documentation for the Times-Backend application (a.k.a Simple-Test-App) https://backofficeapps.dev/Docs/overview-summary.html
 
 
 ## Licensing:
