@@ -31,7 +31,7 @@ In order to install the dependencies using Maven a user then has to run Maven â†
 
 
 ## Licensing:
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
 
 
 
