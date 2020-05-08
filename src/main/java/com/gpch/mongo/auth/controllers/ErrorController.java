@@ -8,6 +8,13 @@ import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 
 import java.io.IOException;
 
+/**
+ *
+ * @author Jaidon Jaekel
+ *
+ * This class handles errors with the login process. If error, redirect to login page
+ *
+ */
 @SuppressWarnings("unused")
 @Controller
 public class ErrorController implements org.springframework.boot.web.servlet.error.ErrorController{

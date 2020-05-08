@@ -11,7 +11,13 @@ import org.springframework.web.bind.annotation.RequestMethod;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-
+/**
+ *
+ * @author Jaidon Jaekel
+ *
+ * This class handles login requests and performs the login
+ *
+ */
 @SuppressWarnings("unused")
 @Controller
 public class LoginController {
@@ -24,6 +30,13 @@ public class LoginController {
 
     private final Logger logger = LoggerFactory.getLogger(this.getClass());
 
+    /**
+     * @param request
+     * @param response
+     * @return the redirect request
+     *
+     * login() handles the login requests and redirects the the callback page.
+     */
     @RequestMapping(value = "/login", method = RequestMethod.GET)
     protected String login(HttpServletRequest request, HttpServletResponse response) {
         logger.debug("Performing login");

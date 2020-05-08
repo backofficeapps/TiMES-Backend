@@ -14,26 +14,32 @@ import org.springframework.security.config.annotation.web.configuration.WebSecur
 import org.springframework.security.web.authentication.logout.LogoutSuccessHandler;
 
 import java.io.UnsupportedEncodingException;
-
+/**
+ *
+ * @author Jaidon Jaekel
+ *
+ * This class sets up the the security configurations for the whole application
+ *
+ */
 @SuppressWarnings("unused")
 @Configuration
 @EnableWebSecurity
 @EnableGlobalMethodSecurity(prePostEnabled = true)
 public class AppConfig extends WebSecurityConfigurerAdapter {
     /**
-     * This is your auth0 domain (tenant you have created when registering with auth0 - account name)
+     * This is the auth0 domain
      */
     @Value(value = "${com.auth0.domain}")
     private String domain;
 
     /**
-     * This is the client id of your auth0 application (see Settings page on auth0 dashboard)
+     * This is the client id
      */
     @Value(value = "${com.auth0.clientId}")
     private String clientId;
 
     /**
-     * This is the client secret of your auth0 application (see Settings page on auth0 dashboard)
+     * This is the client secret
      */
     @Value(value = "${com.auth0.clientSecret}")
     private String clientSecret;
@@ -51,6 +57,12 @@ public class AppConfig extends WebSecurityConfigurerAdapter {
                 .build();
     }
 
+    /**
+     * @param http
+     * @throws Exception
+     *
+     * configures the security for the whole application and permits certain URls to be visited with out login
+     */
     @Override
     protected void configure(HttpSecurity http) throws Exception {
         http.csrf().disable();

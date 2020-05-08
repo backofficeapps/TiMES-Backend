@@ -19,6 +19,13 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
 @SuppressWarnings("unused")
+/**
+ *
+ * @author Jaidon Jaekel
+ *
+ * This class handles the callback after the user has logged in.
+ *
+ */
 @Controller
 public class CallbackController {
 
@@ -27,6 +34,15 @@ public class CallbackController {
     private final String redirectOnFail;
     private final String redirectOnSuccess;
 
+    /**
+     *
+     * @author Jaidon Jaekel
+     * @param None
+     * @return void
+     *
+     * CallbackController() is the constructor and sets the call back endpoints
+     *
+     */
     public CallbackController() {
         this.redirectOnFail = "/login";
         this.redirectOnSuccess = "/events-ui2";
@@ -42,6 +58,13 @@ public class CallbackController {
         handle(req, res);
     }
 
+    /**
+     *
+     * @param request
+     * @param response
+     *
+     * handle() trys to log user in and retrieve token, if it fails, redirect to a redirectOnFailure html
+     */
     private void handle(HttpServletRequest request, HttpServletResponse response) throws IOException {
         try {
             Tokens tokens = controller.handle(request, response);

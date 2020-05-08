@@ -10,13 +10,27 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
-
+/**
+ *
+ * @author Jaidon Jaekel
+ *
+ * This class is the controller the profile page requests
+ *
+ */
 @SuppressWarnings("unused")
 @Controller
 public class ProfileController {
 
     private final Logger logger = LoggerFactory.getLogger(this.getClass());
 
+    /**
+     * @param model
+     * @param authentication
+     * @return
+     *
+     * Handles profile page requests and add the user's infomation to a profile model
+     *
+     */
     @RequestMapping(value = "/profile", method = RequestMethod.GET)
     protected String profile(final Model model, final Authentication authentication) {
 
