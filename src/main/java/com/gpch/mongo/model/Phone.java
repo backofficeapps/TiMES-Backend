@@ -28,11 +28,11 @@ public class Phone {
 	@Id
 	private String user_id;
 	// This variable represents the list of phone number(s) registered to a user
-	private List<String> phone_numbers;
+	private List  phone_numbers;
 	
 	/**
 	 * @author Gage Hoefer
-	 * @param user_id
+	 * @param user_id String
 	 * 
 	 * A simple constructor for the Phone object.
 	 */
@@ -42,8 +42,7 @@ public class Phone {
 	
 	/**
 	 * @author Gage Hoefer
-	 * @param phone_number
-	 * @return None
+	 * @param phone_number String
 	 * 
 	 * When invoked, this method is given a String representing a 
 	 * phone number for a user, which it then adds to the list of
@@ -55,8 +54,7 @@ public class Phone {
 	
 	/**
 	 * @author Gage Hoefer
-	 * @param phone_number
-	 * @return None
+	 * @param phone_number String
 	 * 
 	 * When invoked, this method is given a String representing a 
 	 * phone number for a user, which it then removes from the list
@@ -68,7 +66,7 @@ public class Phone {
 	
 	/**
 	 * @author Gage Hoefer
-	 * @param None
+	 *  
 	 * @return String
 	 * 
 	 * This is a simple 'get' method which returns the user id for the Phone object
@@ -80,13 +78,13 @@ public class Phone {
 	
 	/**
 	 * @author Gage Hoefer
-	 * @param None
-	 * @return List<String>
+	 * 
+	 * @return List 
 	 * 
 	 * This is a simple 'get' method which returns the phone numbers registered
 	 * to a user's account in the form of a list of Strings. 
 	 */
-	public List<String> getPhoneNumbers() {
+	public List  getPhoneNumbers() {
 		return this.phone_numbers;
 	}
 	

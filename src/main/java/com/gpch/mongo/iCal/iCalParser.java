@@ -30,8 +30,6 @@ public class iCalParser extends Thread {
     /**
      *
      * @author Miti Mareddy
-     * @param None
-     * @return void
      *
      * The run() method is the main subroutine of the iCalParser class.
      * The prupose of the run routine is to allow the CalendarBuilder method
@@ -43,7 +41,7 @@ public class iCalParser extends Thread {
      * Finally, the last method in the pipeline is the writeJSON() subroutine which writes the given input as a JSON file.
      * The run() method also captures a generic Exception type in the event of failure in the pipeline.
      *
-     * @Deprecated The CalendarBuilder method from the ical4j framework can be called under a new subroutine,
+     * @deprecated The CalendarBuilder method from the ical4j framework can be called under a new subroutine,
      * and will be created in the iCalParser class. [ NOTE: This has been removed in the current version since the CalendarBuilder
      * function is not thread safe, and needs to be called under the main subroutine.]
      */
@@ -82,8 +80,8 @@ public class iCalParser extends Thread {
      * @author Miti Mareddy
      * @param fin - FileInputStream
      * @return List datatype representing an ArrayList of parsed entries
-     * @throws IOException
-     * @throws ParserException
+     * @throws IOException Exception for Input/Output
+     * @throws ParserException Exception for Parser
      *
      * The readCalendarFiles() subroutine takes in a FileInputStream as input and returns a List of parsed entries. This method relies
      * on the CalendarBuilder object found in the ical4j framework, as well as a Calendar model based on the input parameter.
@@ -151,8 +149,7 @@ public class iCalParser extends Thread {
 
     /**
      * @author Miti Mareddy
-     * @param json - String representing the JSON Array of calendar entry information
-     * @return void
+     * @param json String representing the JSON Array of calendar entry information
      *
      * This subroutine is a helper function that writes a JSON Array represented by the input parameter
      * into a JSON file that can be used by the scheduling and optimization systems, as well as by the databse.
@@ -170,8 +167,6 @@ public class iCalParser extends Thread {
 
     /**
      * @author Miti Mareddy
-     * @param None
-     * @return void
      *
      * This is a helper subroutine that changes the state of the flag 'runnable' to false in order
      * to facilitate the end of the running thread in the outer scope of this class.

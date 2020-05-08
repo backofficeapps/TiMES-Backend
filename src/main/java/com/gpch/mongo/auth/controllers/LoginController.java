@@ -31,8 +31,8 @@ public class LoginController {
     private final Logger logger = LoggerFactory.getLogger(this.getClass());
 
     /**
-     * @param request
-     * @param response
+     * @param request HTTPServletRequest
+     * @param response HTTPServletResponse
      * @return the redirect request
      *
      * login() handles the login requests and redirects the the callback page.

@@ -36,7 +36,6 @@ public class Job {
 	
 	/**
 	 * @author Gage Hoefer
-	 * @param None
 	 * @return String
 	 * 
 	 * This is a simple 'get' method which returns the type for the Job object. 
@@ -47,7 +46,6 @@ public class Job {
 	
 	/**
 	 * @author Gage Hoefer
-	 * @param None
 	 * @return String
 	 * 
 	 * This is a simple 'get' method which returns the job id for the Job object; this is 
@@ -60,7 +58,6 @@ public class Job {
 	
 	/**
 	 * @author Gage Hoefer
-	 * @param None
 	 * @return String
 	 * 
 	 * This is a simple 'get' method which returns the unique id for the Job object.
@@ -71,8 +68,7 @@ public class Job {
 	
 	/**
 	 * @author Gage Hoefer
-	 * @param type
-	 * @return None
+	 * @param type String
 	 * 
 	 * This is a simple 'set' method which, given a String describing the job type,
 	 * sets the type for the Job object.
@@ -83,8 +79,7 @@ public class Job {
 	
 	/**
 	 * @author Gage Hoefer
-	 * @param id
-	 * @return None
+	 * @param id String
 	 * 
 	 * This is a simple 'set' method which, given a String describing the job id
 	 * which corresponds to the job type, sets the id for the Job object. 

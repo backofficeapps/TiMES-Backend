@@ -27,7 +27,7 @@ public class JobService {
 	/**
 	 * @author Gage Hoefer
 	 * @param jobRepository
-	 * @return None
+	 *  
 	 * 
 	 * This is a simple constructor for the JobService class. 
 	 */
@@ -39,7 +39,7 @@ public class JobService {
 	/**
 	 * @author Gage Hoefer
 	 * @param job
-	 * @return None
+	 *  
 	 * 
 	 * This method is given a Job object, and uses an instance of 
 	 * the JobRepository class to save the Job to the database. 
@@ -50,8 +50,8 @@ public class JobService {
 
 	/**
 	 * @author Gage Hoefer
-	 * @param None
-	 * @return Iterable<Job>
+	 *  
+	 * @return Iterable
 	 * 
 	 * This method uses an instance of the JobRepository class to retrieve
 	 * all Job objects stored in the database, returning them in the form
@@ -63,8 +63,8 @@ public class JobService {
 
     /**
      * @author Gage Hoefer
-     * @param None
-     * @return None
+     *  
+     *  
      * 
      * This method uses an instance of the JobRepository class to 
      * delete all Jobs stored in the database. 
@@ -76,7 +76,7 @@ public class JobService {
     /**
      * @author Gage Hoefer
      * @param id
-     * @return None
+     *  
      * 
      * This method is given a String representing an id for a specific
      * Job stored in the database, and uses an instance of the JobRepository 
@@ -89,7 +89,7 @@ public class JobService {
     /**
      * @author Gage Hoefer
      * @param id
-     * @return Optional<Job>
+     * @return Optional
      * 
      * This method is given a String representing an id for a specific
      * Job stored in the database, and uses an instance of the JobRepository
@@ -104,7 +104,7 @@ public class JobService {
      * @author Gage Hoefer
      * @param id
      * @param job_id
-     * @return None
+     *  
      * 
      * This method is given a String representing an id for a specific Job
      * stored in the database, and a String representing a job id; with these,
@@ -122,7 +122,7 @@ public class JobService {
      * @author Gage Hoefer
      * @param id
      * @param job_type
-     * @return None
+     *  
      * 
      * This method is given a String representing an id for a specific Job
      * stored in the database, and a String representing a type of job; with 

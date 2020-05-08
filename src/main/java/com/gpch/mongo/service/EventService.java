@@ -35,7 +35,7 @@ public class EventService {
      * @author Gage Hoefer
      * @param eventRepository
      * @param userJobRepository
-     * @return None
+     *  
      * 
      * This is a simple constructor for the EventService class. 
      */
@@ -59,8 +59,8 @@ public class EventService {
 
     /**
      * @author Gage Hoefer
-     * @param None
-     * @return Iterable<Event>
+     *  
+     * @return Iterable
      * 
      * This method uses an instance of the EventRepository class to
      * retrieve all Events stored in the database, returning them in 
@@ -72,8 +72,8 @@ public class EventService {
 
     /**
      * @author Gage Hoefer
-     * @param None
-     * @return None
+     *  
+     *  
      * 
      * This method uses an instance of the EventRepository class to 
      * delete all Events stored in the database. 
@@ -85,7 +85,7 @@ public class EventService {
     /**
      * @author Gage Hoefer
      * @param id
-     * @return None
+     *  
      * 
      * This method is given a String representing the id for a 
      * specific Event object, and uses an instance of the EventRepository
@@ -98,7 +98,7 @@ public class EventService {
     /**
      * @author Gage Hoefer
      * @param id
-     * @return Optional<Event>
+     * @return Optional
      * 
      * This method is given a String representing the id for a 
      * specific Event object, and uses an instance of the EventRepository
@@ -114,7 +114,7 @@ public class EventService {
      * @param event_id
      * @param user_id
      * @param job_id
-     * @return None
+     *  
      * 
      * This method is given a String representing the event id for 
      * a specific Event object, a String representing a user id, and 
@@ -136,7 +136,7 @@ public class EventService {
      * @author Gage Hoefer
      * @param event_id
      * @param user_job
-     * @return None
+     *  
      * 
      * This method is given a String representing the event id for a 
      * specific Event stored in the database, and a UserJob object; with
@@ -156,7 +156,7 @@ public class EventService {
      * @author Gage Hoefer
      * @param event_id
      * @param new_id
-     * @return None
+     *  
      * 
      * This method is given a String representing the event id for a
      * specific Event stored in the database, and a String representing
@@ -174,7 +174,7 @@ public class EventService {
     /**
      * @author Gage Hoefer
      * @param event_id
-     * @return List<UserJob>
+     * @return List
      * 
      * This method is given a String representing the event id for a 
      * specific Event stored in the database, and uses an instance of the
@@ -190,7 +190,7 @@ public class EventService {
      * @author Gage Hoefer
      * @param event_id
      * @param event_name
-     * @return None
+     *  
      * 
      * This method is given a String representing the event id for a
      * specific Event stored in the database, and a String representing
@@ -209,7 +209,7 @@ public class EventService {
      * @author Gage Hoefer
      * @param event_id
      * @param event_type
-     * @return None
+     *  
      * 
      * This method is given a String representing the event id for a
      * specific Event stored in the database, and a String representing
@@ -229,7 +229,7 @@ public class EventService {
      * @param event_id
      * @param event_street_name
      * @param event_street_number
-     * @return None
+     *  
      * 
      * This method is given a String representing the event id for a
      * specific Event stored in the database, a String representing
@@ -249,7 +249,7 @@ public class EventService {
      * @author Gage Hoefer
      * @param event_id
      * @param event_time
-     * @return None
+     *  
      * 
      * This method is given a String representing the event id for a
      * specific Event stored in the database, and a String representing
@@ -268,7 +268,7 @@ public class EventService {
      * @author Gage Hoefer
      * @param event_id
      * @param event_date
-     * @return None
+     *  
      * 
      * This method is given a String representing the event id for a
      * specific Event stored in the database, and a LocalDateTime object

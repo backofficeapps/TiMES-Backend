@@ -30,9 +30,9 @@ public class LogoutController implements LogoutSuccessHandler {
     private final Logger logger = LoggerFactory.getLogger(this.getClass());
 
     /**
-     * @param req
-     * @param res
-     * @param authentication
+     * @param req HttpServletRequest
+     * @param res HttpServletResponse
+     * @param authentication Authentication
      *
      * onLogoutSuccess() performs logout requests and returns the user to the homepage
      *

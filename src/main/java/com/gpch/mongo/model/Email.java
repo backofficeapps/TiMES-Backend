@@ -42,8 +42,7 @@ public class Email {
 	
 	/**
 	 * @author Gage Hoefer
-	 * @param email
-	 * @return None
+	 * @param email String
 	 * 
 	 * When invoked, this method is given a String representing an email
 	 * address for a user, which it then adds to the list of email addresses
@@ -55,8 +54,7 @@ public class Email {
 	
 	/**
 	 * @author Gage Hoefer
-	 * @param email
-	 * @return None
+	 * @param email String
 	 * 
 	 * When invoked, this method is given a String representing an email
 	 * address for a user, which it then removes from the list of email
@@ -68,7 +66,6 @@ public class Email {
 	
 	/**
 	 * @author Gage Hoefer
-	 * @param None
 	 * @return String
 	 * 
 	 * This is a simple 'get' method which returns the user id
@@ -80,8 +77,7 @@ public class Email {
 	
 	/**
 	 * @author Gage Hoefer
-	 * @param None
-	 * @return List<String>
+	 * @return List
 	 * 
 	 * This is a simple 'get' method which returns the list
 	 * of all email addresses registered to a user (which

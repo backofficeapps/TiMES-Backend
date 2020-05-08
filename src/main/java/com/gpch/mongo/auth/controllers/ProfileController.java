@@ -24,9 +24,9 @@ public class ProfileController {
     private final Logger logger = LoggerFactory.getLogger(this.getClass());
 
     /**
-     * @param model
-     * @param authentication
-     * @return
+     * @param model Model
+     * @param authentication Authentication
+     * @return String
      *
      * Handles profile page requests and add the user's infomation to a profile model
      *

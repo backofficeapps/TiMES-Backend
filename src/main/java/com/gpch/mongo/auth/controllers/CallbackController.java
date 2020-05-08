@@ -37,13 +37,11 @@ public class CallbackController {
     /**
      *
      * @author Jaidon Jaekel
-     * @param None
-     * @return void
      *
      * CallbackController() is the constructor and sets the call back endpoints
      *
      */
-    public CallbackController() {
+    public void CallbackController() {
         this.redirectOnFail = "/login";
         this.redirectOnSuccess = "/events-ui2";
     }

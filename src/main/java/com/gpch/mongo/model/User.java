@@ -44,11 +44,10 @@ public class User {
 	
 	/**
 	 * @author Gage Hoefer
-	 * @param user_first_name
-	 * @param user_last_name
-	 * @param user_permissions
-	 * @param user_events
-	 * @return None
+	 * @param user_first_name String
+	 * @param user_last_name String
+	 * @param user_permissions String
+	 * @param user_events String
 	 * 
 	 * This is a simple constructor for a User object. 
 	 */
@@ -61,8 +60,7 @@ public class User {
 	
 	/**
 	 * @author Gage Hoefer
-	 * @param user_events
-	 * @return None
+	 * @param user_events List
 	 * 
 	 * This is a simple 'set' method which sets the list of events a user
 	 * is registered to work, given a list of Strings when represents 
@@ -74,8 +72,7 @@ public class User {
 	
 	/**
 	 * @author Gage Hoefer
-	 * @param None
-	 * @return List<String>
+	 * @return List
 	 * 
 	 * This is a simple 'get' method which returns all events a user
 	 * is registered to work in the form of a list of Strings. 
@@ -86,8 +83,7 @@ public class User {
 	
 	/**
 	 * @author Gage Hoefer
-	 * @param event_id
-	 * @return None
+	 * @param event_id String
 	 * 
 	 * When invoked, this method is given a String representing
 	 * an event id for a user job, which it then adds to the list
@@ -99,8 +95,7 @@ public class User {
 	
 	/**
 	 * @author Gage Hoefer
-	 * @param event_id
-	 * @return None
+	 * @param event_id String
 	 * 
 	 * When invoked, this method is given a String representing
 	 * an event id for a user job, which it then removes from the
@@ -112,8 +107,7 @@ public class User {
 	
 	/**
 	 * @author Gage Hoefer
-	 * @param user_first_name
-	 * @return None
+	 * @param user_first_name String
 	 * 
 	 * This is a simple 'set' method which sets the first name of
 	 * a user, given a String representing the first name of said
@@ -125,7 +119,6 @@ public class User {
 	
 	/**
 	 * @author Gage Hoefer
-	 * @param None
 	 * @return String
 	 * 
 	 * This is a simple 'get' method which returns the first name 
@@ -137,8 +130,7 @@ public class User {
 	
 	/**
 	 * @author Gage Hoefer
-	 * @param user_last_name
-	 * @return None
+	 * @param user_last_name String
 	 * 
 	 * This is a simple 'set' method which sets the last name for
 	 * a user, given a String which represents the last name for
@@ -150,7 +142,6 @@ public class User {
 	
 	/**
 	 * @author Gage Hoefer
-	 * @param None
 	 * @return String
 	 * 
 	 * This is a simple 'get' method which returns the last name
@@ -162,7 +153,6 @@ public class User {
 	
 	/**
 	 * @author Gage Hoefer
-	 * @param None
 	 * @return String
 	 * 
 	 * This is a simple 'get' method which returns the user id for
@@ -174,7 +164,6 @@ public class User {
 	
 	/**
 	 * @author Gage Hoefer
-	 * @param None
 	 * @return String
 	 * 
 	 * This is a simple 'get' method which returns the permissions
@@ -186,8 +175,7 @@ public class User {
 	
 	/**
 	 * @author Gage Hoefer
-	 * @param user_permissions
-	 * @return None
+	 * @param user_permissions String
 	 * 
 	 * This is a simple 'set' method which sets the permissions for
 	 * a user account, given a String which represents the permissions

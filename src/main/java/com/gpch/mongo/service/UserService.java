@@ -30,7 +30,7 @@ public class UserService {
 	/**
 	 * @author Gage Hoefer
 	 * @param userRepository
-	 * @return None
+	 *  
 	 * 
 	 * This is a simple constructor for the UserService class. 
 	 */
@@ -54,8 +54,8 @@ public class UserService {
 
 	/**
 	 * @author Gage Hoefer
-	 * @param None
-	 * @return Iterable<User>
+	 *  
+	 * @return Iterable
 	 * 
 	 * This method uses an instance of the UserRepository class to
 	 * find all users stored in the database, returning them in the
@@ -67,8 +67,8 @@ public class UserService {
 
     /**
      * @author Gage Hoefer
-     * @param None
-     * @return None
+     *  
+     *  
      * 
      * This method uses an instance of the UserRepository class to
      * delete all users stored in the database. 
@@ -80,7 +80,7 @@ public class UserService {
     /**
      * @author Gage Hoefer
      * @param id
-     * @return None
+     *  
      * 
      * This method is given a String representing the id of a specific user
      * stored in the database, and uses an instance of the UserRepository 
@@ -93,7 +93,7 @@ public class UserService {
     /**
      * @author Gage Hoefer
      * @param id
-     * @return Optional<User> 
+     * @return Optional
      * 
      * This method is given a String representing the id of a specific user
      * stored in the database, and uses an instance of the UserRepository 
@@ -108,7 +108,7 @@ public class UserService {
      * @author Gage Hoefer
      * @param id
      * @param first_name
-     * @return None
+     *  
      * 
      * This method is given a String representing the id for a specific user
      * stored in the database, and a String representing the first
@@ -127,7 +127,7 @@ public class UserService {
      * @author Gage Hoefer
      * @param id
      * @param last_name
-     * @return None
+     *  
      * 
      * This method is given a String representing the id for a specific user
      * stored in the database, and a String representing the last
@@ -146,7 +146,7 @@ public class UserService {
      * @author Gage Hoefer
      * @param id
      * @param permissions
-     * @return None
+     *  
      * 
      * This method is given a String representing the id for a specific user
      * stored in the database, and a String representing the permissions of the 
@@ -165,7 +165,7 @@ public class UserService {
      * @author Gage Hoefer
      * @param id
      * @param event_id
-     * @return None
+     *  
      * 
      * This method is given a String representing the id for a specific user
      * stored in the database, and a String representing an event id for an Event; 
@@ -184,7 +184,7 @@ public class UserService {
      * @author Gage Hoefer
      * @param id
      * @param event_id
-     * @return None
+     *  
      * 
      * This method is given a String representing the id for a specific user
      * stored in the database, and a String representing an event id for an Event; 
@@ -202,7 +202,7 @@ public class UserService {
     /**
      * @author Gage Hoefer
      * @param id
-     * @return List<String>
+     * @return List
      * 
      * This method is given a String representing the id for a specific user
      * stored in the database; with this, it retrieves all events associated with

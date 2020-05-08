@@ -27,7 +27,7 @@ public class UserJobService {
 	/**
 	 * @author Gage Hoefer
 	 * @param userJobRepository
-	 * @return None
+	 *  
 	 * 
 	 * This is a simple constructor for the UserJobService class. 
 	 */
@@ -51,8 +51,8 @@ public class UserJobService {
 
 	/**
 	 * @author Gage Hoefer
-	 * @param None
-	 * @return Iterable<UserJob>
+	 *  
+	 * @return Iterable
 	 * 
 	 * This method uses an instance of the UserJobRepository class to
 	 * retrieve all UserJob objects stored in the database, returning 
@@ -64,8 +64,8 @@ public class UserJobService {
 
     /**
      * @author Gage Hoefer
-     * @param None
-     * @return None
+     *  
+     *  
      * 
      * This method uses an instance of the UserJobRepository class to
      * delete all UserJobs stored in the database. 
@@ -77,7 +77,7 @@ public class UserJobService {
     /**
      * @author Gage Hoefer
      * @param id
-     * @return None
+     *  
      * 
      * This method is given a String representing the id for a
      * specific UserJob object stored in the database, and uses an 
@@ -91,7 +91,7 @@ public class UserJobService {
     /**
      * @author Gage Hoefer
      * @param id
-     * @return Optional<UserJob> 
+     * @return Optional
      * 
      * This method is given a String representing the id for a 
      * specific UserJob object stored in the database, and uses an
@@ -106,7 +106,7 @@ public class UserJobService {
      * @author Gage Hoefer
      * @param id
      * @param user_id
-     * @return None
+     *  
      * 
      * This method is given a String representing the id for a 
      * specific UserJob object, and a String representing a user id;
@@ -124,7 +124,7 @@ public class UserJobService {
      * @author Gage Hoefer
      * @param id
      * @param job_id
-     * @return None
+     *  
      * 
      * This method is given a String representing the id for a 
      * specific UserJob object, and a String representing a job id;

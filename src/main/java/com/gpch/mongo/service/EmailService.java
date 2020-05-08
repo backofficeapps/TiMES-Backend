@@ -27,7 +27,7 @@ public class EmailService {
 	/**
 	 * @author Gage Hoefer
 	 * @param emailRepository
-	 * @return None
+	 *  
 	 * 
 	 * This is a simple constructor for the EmailService class. 
 	 */
@@ -50,8 +50,8 @@ public class EmailService {
 
 	/**
 	 * @author Gage Hoefer
-	 * @param None
-	 * @return Iterable<Email>
+	 *  
+	 * @return Iterable
 	 * 
 	 * This method uses an instance of the EmailRepository class to
 	 * retrieve all emails saved in the database, and returns them
@@ -63,8 +63,8 @@ public class EmailService {
 
     /**
      * @author Gage Hoefer
-     * @param None
-     * @return None
+     *  
+     *  
      * 
      * This method uses an instance of the EmailRepository class to
      * delete all emails saved in the database. 
@@ -76,7 +76,7 @@ public class EmailService {
     /**
      * @author Gage Hoefer
      * @param id
-     * @return None
+     *  
      * 
      * This method is given a String representing an Email object id, 
      * and uses an instance of the EmailRepository class to delete the
@@ -89,7 +89,7 @@ public class EmailService {
     /**
      * @author Gage Hoefer
      * @param id
-     * @return Optional<Email>
+     * @return Optional
      * 
      * This method is given a String representing an Email object id, 
      * and uses an instance of the EmailRepository class to find the 
@@ -104,7 +104,7 @@ public class EmailService {
      * @author Gage Hoefer
      * @param id
      * @param email_address
-     * @return None
+     *  
      * 
      * This method is given a String representing an Email object id, 
      * and a String representing a specific email address; with these
@@ -122,7 +122,7 @@ public class EmailService {
      * @author Gage Hoefer
      * @param id
      * @param email_address
-     * @return None
+     *  
      * 
      * This method is given a String representing an Email object id, 
      * and a String representing a specific email address; with these

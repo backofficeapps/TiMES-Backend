@@ -39,7 +39,6 @@ public class UserJob {
 	 * @param event_id
 	 * @param user_id
 	 * @param job_id
-	 * @return None
 	 * 
 	 * This is a simple constructor for a UserJob object. 
 	 */
@@ -52,7 +51,6 @@ public class UserJob {
 	/**
 	 * @author Gage Hoefer
 	 * @param user_id
-	 * @return None
 	 * 
 	 * This is a simple 'set' method which sets the user id
 	 * for a UserJob object, when given a String which represents
@@ -65,7 +63,7 @@ public class UserJob {
 	/**
 	 * @author Gage Hoefer
 	 * @param job_id
-	 * @return None
+	 *   
 	 * 
 	 * This is a simple 'set' method which sets the job id
 	 * for a UserJob object, when given a String which represents
@@ -78,7 +76,7 @@ public class UserJob {
 	/**
 	 * @author Gage Hoefer
 	 * @param event_id
-	 * @return None
+	 *   
 	 * 
 	 * This is a simple 'set' method which sets the event it
 	 * for a UserJob object, when given a String which represents
@@ -90,7 +88,7 @@ public class UserJob {
 	
 	/**
 	 * @author Gage Hoefer
-	 * @param None
+	 *  
 	 * @return String
 	 * 
 	 * This is a simple 'get' method which returns the unique
@@ -102,7 +100,7 @@ public class UserJob {
 	
 	/**
 	 * @author Gage Hoefer
-	 * @param None
+	 *  
 	 * @return String
 	 * 
 	 * This is a simple 'get' method which returns the user id
@@ -114,7 +112,7 @@ public class UserJob {
 	
 	/**
 	 * @author Gage Hoefer
-	 * @param None
+	 *  
 	 * @return String
 	 * 
 	 * This is a simple 'get' method which returns the job id
@@ -126,7 +124,7 @@ public class UserJob {
 	
 	/**
 	 * @author Gage Hoefer
-	 * @param None
+	 *  
 	 * @return String
 	 * 
 	 * This is a simple 'get' method which returns the event id

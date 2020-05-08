@@ -28,7 +28,7 @@ public class PhoneService {
 	/**
 	 * @author Gage Hoefer
 	 * @param phoneRepository
-	 * @return None
+	 *  
 	 * 
 	 * This is a simple constructor for the PhoneService class. 
 	 */
@@ -51,8 +51,8 @@ public class PhoneService {
 
 	/**
 	 * @author Gage Hoefer
-	 * @param None
-	 * @return Iterable<Phone>
+	 *  
+	 * @return Iterable
 	 * 
 	 * This method uses an instance of the PhoneRepository class
 	 * to retrieve all Phone objects stored in the database, returning
@@ -64,8 +64,8 @@ public class PhoneService {
 
     /**
      * @author Gage Hoefer
-     * @param None
-     * @return None
+     *  
+     *  
      * 
      * This method uses an instance of the PhoneRepository class
      * to delete all Phone objects stored in the database. 
@@ -77,7 +77,7 @@ public class PhoneService {
     /**
      * @author Gage Hoefer
      * @param id
-     * @return None
+     *  
      * 
      * This method is given a String representing the id for a 
      * specific Phone object, and uses an instance of the PhoneRepository class
@@ -90,7 +90,7 @@ public class PhoneService {
     /**
      * @author Gage Hoefer
      * @param id
-     * @return Optional<Phone>
+     * @return Optional
      * 
      * This method is given a String representing the id for a
      * specific Phone object, and uses an instance of the PhoneRepository class
@@ -105,7 +105,7 @@ public class PhoneService {
      * @author Gage Hoefer
      * @param id
      * @param phone_number
-     * @return None
+     *  
      * 
      * This method is given a String representing the id for a 
      * specific Phone object, and a String representing a phone number;
@@ -124,7 +124,7 @@ public class PhoneService {
      * @author Gage Hoefer
      * @param id
      * @param phone_number
-     * @return None
+     *  
      * 
      * This method is given a String representing the id for a 
      * specific Phone object, and a String representing a phone number;

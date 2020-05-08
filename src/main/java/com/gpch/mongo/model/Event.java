@@ -59,10 +59,9 @@ public class Event {
     
     /**
      * @author Gage Hoefer
-     * @param event_id
-     * @param event_name
-     * @param event_type
-     * @return None
+     * @param event_id String
+     * @param event_name String
+     * @param event_type String
      * 
      * This is a simple constructor for an Event object
      */
@@ -74,8 +73,7 @@ public class Event {
     
     /**
      * @author Gage Hoefer
-     * @param user_job
-     * @return None
+     * @param user_job UserJob
      * 
      * When invoked, this method is given a UserJob object and
      * adds it to the list of UserJob objects associated with this event.
@@ -86,8 +84,7 @@ public class Event {
     
     /**
      * @author Gage Hoefer
-     * @param user_job
-     * @return None
+     * @param user_job UserJob
      * 
      * When invoked, this method is given a UserJob object and
      * removes it from the list of UserJob objects associated with this event. 
@@ -101,8 +98,7 @@ public class Event {
     
     /**
      * @author Gage Hoefer
-     * @param None
-     * @return List<String>
+     * @return List
      * 
      * This is a simple 'get' method which returns all user ids
      * from the list of users registered to work the event in 
@@ -118,7 +114,6 @@ public class Event {
     
     /**
      * @author Gage Hoefer
-     * @param None
      * @return String
      * 
      * This is a simple 'get' method which returns the
@@ -131,7 +126,6 @@ public class Event {
     
     /**
      * @author Gage Hoefer
-     * @param None
      * @return String
      * 
      * This is a simple 'get' method which returns the event
@@ -143,7 +137,6 @@ public class Event {
     
     /**
      * @author Gage Hoefer
-     * @param None
      * @return String
      * 
      * This is a simple 'get' method which returns the event name
@@ -155,7 +148,6 @@ public class Event {
     
     /**
      * @author Gage Hoefer
-     * @param None
      * @return String
      * 
      * This is a simple 'get' method which returns the type of
@@ -167,7 +159,6 @@ public class Event {
     
     /**
      * @author Gage Hoefer
-     * @param None
      * @return String
      * 
      * This is a simple 'get' method which returns the location
@@ -179,7 +170,6 @@ public class Event {
     
     /**
      * @author Gage Hoefer
-     * @param None
      * @return LocalDateTime
      * 
      * This is a simple 'get' method which returns the date of
@@ -191,7 +181,6 @@ public class Event {
     
     /**
      * @author Gage Hoefer
-     * @param None
      * @return String
      * 
      * This is a simple 'get' method which returns the time the
@@ -203,8 +192,7 @@ public class Event {
     
     /**
      * @author Gage Hoefer
-     * @param id
-     * @return None
+     * @param id String
      * 
      * This is a simple 'set' method which sets the id for the Event
      * object, given a String which represents said id. 
@@ -215,8 +203,7 @@ public class Event {
     
     /**
      * @author Gage Hoefer
-     * @param event_id
-     * @return None
+     * @param event_id String
      * 
      * This is a simple 'set' method which sets the event id for an
      * event, given a String which represents said event id. 
@@ -227,8 +214,7 @@ public class Event {
     
     /**
      * @author Gage Hoefer
-     * @param event_name
-     * @return None
+     * @param event_name String
      * 
      * This is a simple 'set' method which sets the name of an event,
      * given a String which represents said event name. 
@@ -239,8 +225,7 @@ public class Event {
     
     /**
      * @author Gage Hoefer
-     * @param event_type
-     * @return None
+     * @param event_type String
      * 
      * This is a simple 'set' method which sets the type of an event,
      * given a String which represents said event type.
@@ -251,9 +236,8 @@ public class Event {
     
     /**
      * @author Gage Hoefer
-     * @param location_street_number
-     * @param location_street_name
-     * @return None
+     * @param location_street_number String
+     * @param location_street_name String
      * 
      * This is a simple 'set' method which sets the location of an event,
      * given two Strings which represent the street number and street name 
@@ -266,8 +250,7 @@ public class Event {
     
     /**
      * @author Gage Hoefer
-     * @param date
-     * @return None
+     * @param date LocalDateTime
      * 
      * This is a simple 'set' method which sets the date an event takes place,
      * given a LocalDateTime object which represents said date. 
@@ -278,8 +261,7 @@ public class Event {
     
     /**
      * @author Gage Hoefer
-     * @param event_time
-     * @return None
+     * @param event_time String
      * 
      * This is a simple 'set' method which sets the time an event takes place,
      * given a String which represents said event time. 

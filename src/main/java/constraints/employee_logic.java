@@ -21,10 +21,10 @@ import java.util.stream.Collectors;
 public class employee_logic
 {
 
+
     /**
-     * Call employee_logic.getEventJobEval to cal this program correctly from another class (pass the two requisite JSON
-     * files.
      * @param args
+     * Call employee_logic.getEventJobEval to cal this program correctly from another class (pass the two requisite JSON files.
      */
     @SuppressWarnings("unchecked")
     public static void main(String[] args)
@@ -144,40 +144,47 @@ public class employee_logic
     //####################################################################################################################//
 
     /**
+     * @param evt Event
+     * @param emp Employee
+     * @return Boolean any matches
+     *
      * Check days Employee has available to work against the Event day looking for any matches.
      * If an Employee has an available day that is the same as the Event, the Boolean return value will be true
-     * @param evt Event, emp Employee
-     * @return Boolean any matches
+     *
      */
     public static Boolean checkEmployeeDays(Event evt, Employee emp ){
         return emp.Days.stream().anyMatch(day -> evt.Day.toLowerCase().equals(day.toLowerCase()));
     }
 
     /**
+     * @param job String
+     * @param emp Employee
+     * @return Boolean any matches.
+     *
      * Check jobs employees have available against each jobs within the event. All jobs on employee vs all jobs on event.
      * If an Employee has a job proficiency that is the same as the Event, the Boolean return value will be true
-     * @param job String, emp Employee
-     * @return Boolean any matches.
      */
     public static Boolean checkEmployeeJobs(String job, Employee emp){
         return emp.Jobs.stream().anyMatch(empJob -> job.toLowerCase().equals(empJob.toLowerCase()));
     }
 
     /**
+     * @param evt Event
+     * @param emp Employee
+     * @return Boolean any matches.
      * Check sports that Employees have available against the sports of the Event. If an Employee has a sport attribute
      * that is the same as the Event, the Boolean return value will be true
-     * @param evt Event, emp Employee
-     * @return Boolean any matches.
      */
     public static Boolean checkEmployeeSports(Event evt, Employee emp){
         return emp.Sports.stream().anyMatch(sport -> evt.Sport.toLowerCase().equals(sport.toLowerCase()));
     }
 
     /**
+     * @param events ArrayList
+     * @param employees ArrayList
+     * @return availabilities Hashmap
      * Filters out days and sports from Employee list to match job's days and sports attributes. Then iterate's through
      * available jobs and compares the available jobs to the Employee jobs capabilities
-     * @param events ArrayList<Event>, employees ArrayList<Employee>
-     * @return availabilities Hashmap
      */
     public static HashMap<String, HashMap<String, ArrayList<String>>> getJobAvalabilities(ArrayList<Event> events, ArrayList<Employee> employees){
         HashMap<String, HashMap<String, ArrayList<String>>> availabilities = new HashMap();
@@ -205,12 +212,13 @@ public class employee_logic
 
 
     /**
-     *      * Creates a JSONParser object. Creates ArrayLists for both events and employees.
-     *      * Then reads the JSON files passed to the function.  Then iterates over collected data from JSON file, calls
-     *      * the functions that parseEmployeeObject and parseEventObject to collect all possible employee to event combinations
-     *      * before returning all job availabilities
-     *      * @param eventFile String, employeeFile String
-     *      * @return jobAvailabilities
+     * @param eventFile String
+     * @param employeeFile String
+     * @return jobAvailabilities
+     * Creates a JSONParser object. Creates ArrayLists for both events and employees.
+     * Then reads the JSON files passed to the function.  Then iterates over collected data from JSON file, calls
+     * the functions that parseEmployeeObject and parseEventObject to collect all possible employee to event combinations
+     * before returning all job availabilities
      */
     public static HashMap<String, HashMap<String, ArrayList<String>>> getEventJobAval(String eventFile, String employeeFile){
         //JSON parser object to parse read file
