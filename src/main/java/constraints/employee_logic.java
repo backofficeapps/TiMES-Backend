@@ -24,6 +24,7 @@ public class employee_logic
     /**
      * Call employee_logic.getEventJobEval to cal this program correctly from another class (pass the two requisite JSON
      * files.
+     * @param args
      */
     @SuppressWarnings("unchecked")
     public static void main(String[] args)
@@ -35,8 +36,10 @@ public class employee_logic
 //####################################################################################################################//
 
     /**
-     * Parses Employee JSON file and assigns the JSON object attributes to primitive data types
-     * @return Employee object E.
+     * Parses Employee JSON file and assigns the JSON object attributes to primitive data types.
+     * These data types are then assigned to an Employee object as attributes before returning the Employee object
+     * @param employee JSONobject
+     * @return E Employee().
      */
     public static Employee parseEmployeeObject(JSONObject employee)
     {
@@ -65,14 +68,20 @@ public class employee_logic
         E.Jobs = Arrays.asList(jobs.split(",")).stream().map(job -> job.trim()).collect(Collectors.toList());
         E.Days = Arrays.asList(days_aval.split(",")).stream().map(day -> day.trim()).collect(Collectors.toList());
 
+        //System.out.println(E.Name);
+        //System.out.println(E.Sports);
+        //System.out.println(E.Jobs);
+        //System.out.println(E.Days);
         return E;
     }
 
 //####################################################################################################################//
 
     /**
-     * Parses Event JSON file and assigns the JSON object attributes to primitive data types
-     * @return Event object E.
+     * Parses Event JSON file and assigns the JSON object attributes to primitive data types.
+     * These data types are then assigned to an Event object as attributes before returning the Event object
+     * @param eventList JSONobject
+     * @return E Event().
      */
     public static Event parseEventObject(JSONObject eventList)
     {
@@ -109,9 +118,8 @@ public class employee_logic
 //####################################################################################################################//
 
     /**
-     * Creates Event object with attributes
+     * Creates Event object with attributes.
      */
-    //Creates Event object with attributes
     public static class Event{
         public String Name;
         public String Sport;
@@ -122,7 +130,9 @@ public class employee_logic
 
     }
 
-    //Creates Employee object with attributes
+    /**
+     * Creates Employee object with attributes
+     */
     public static class Employee{
         public String Name;
         public List<String> Sports;
@@ -133,22 +143,42 @@ public class employee_logic
 
     //####################################################################################################################//
 
-    //Check days employee has available against event day
+    /**
+     * Check days Employee has available to work against the Event day looking for any matches.
+     * If an Employee has an available day that is the same as the Event, the Boolean return value will be true
+     * @param evt Event, emp Employee
+     * @return Boolean any matches
+     */
     public static Boolean checkEmployeeDays(Event evt, Employee emp ){
         return emp.Days.stream().anyMatch(day -> evt.Day.toLowerCase().equals(day.toLowerCase()));
     }
 
-    //Check jobs employees have avaiable against each jobs within the event. All jobs on employee vs all jobs on event.
+    /**
+     * Check jobs employees have available against each jobs within the event. All jobs on employee vs all jobs on event.
+     * If an Employee has a job proficiency that is the same as the Event, the Boolean return value will be true
+     * @param job String, emp Employee
+     * @return Boolean any matches.
+     */
     public static Boolean checkEmployeeJobs(String job, Employee emp){
         return emp.Jobs.stream().anyMatch(empJob -> job.toLowerCase().equals(empJob.toLowerCase()));
     }
 
-    //Check sports employees have available against the sports of the event.
+    /**
+     * Check sports that Employees have available against the sports of the Event. If an Employee has a sport attribute
+     * that is the same as the Event, the Boolean return value will be true
+     * @param evt Event, emp Employee
+     * @return Boolean any matches.
+     */
     public static Boolean checkEmployeeSports(Event evt, Employee emp){
         return emp.Sports.stream().anyMatch(sport -> evt.Sport.toLowerCase().equals(sport.toLowerCase()));
     }
 
-    //
+    /**
+     * Filters out days and sports from Employee list to match job's days and sports attributes. Then iterate's through
+     * available jobs and compares the available jobs to the Employee jobs capabilities
+     * @param events ArrayList<Event>, employees ArrayList<Employee>
+     * @return availabilities Hashmap
+     */
     public static HashMap<String, HashMap<String, ArrayList<String>>> getJobAvalabilities(ArrayList<Event> events, ArrayList<Employee> employees){
         HashMap<String, HashMap<String, ArrayList<String>>> availabilities = new HashMap();
 
@@ -174,7 +204,14 @@ public class employee_logic
     }
 
 
-
+    /**
+     *      * Creates a JSONParser object. Creates ArrayLists for both events and employees.
+     *      * Then reads the JSON files passed to the function.  Then iterates over collected data from JSON file, calls
+     *      * the functions that parseEmployeeObject and parseEventObject to collect all possible employee to event combinations
+     *      * before returning all job availabilities
+     *      * @param eventFile String, employeeFile String
+     *      * @return jobAvailabilities
+     */
     public static HashMap<String, HashMap<String, ArrayList<String>>> getEventJobAval(String eventFile, String employeeFile){
         //JSON parser object to parse read file
         JSONParser jsonParser = new JSONParser();
@@ -192,7 +229,7 @@ public class employee_logic
             Object obj2 = jsonParser.parse(reader2);
 
             JSONArray eventList = (JSONArray) obj2;
-            System.out.println(eventList);
+            //System.out.println(eventList);
 
             //Iterate over event array
             eventList.forEach( emp -> events.add(parseEventObject( (JSONObject) emp ) ));
@@ -215,7 +252,7 @@ public class employee_logic
             Object obj = jsonParser.parse(reader);
 
             JSONArray employeeList = (JSONArray) obj;
-            System.out.println(employeeList);
+            //System.out.println(employeeList);
 
             //Iterate over employee array
             employeeList.forEach( emp -> employees.add(parseEmployeeObject( (JSONObject) emp ) ));
