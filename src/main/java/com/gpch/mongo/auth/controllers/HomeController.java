@@ -11,6 +11,13 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
 @SuppressWarnings("unused")
+/**
+ *
+ * @author Jaidon Jaekel
+ *
+ * This class handles the homepage - when the user is authenticated, the profile is set using the JWT token and geting the claims
+ *
+ */
 @Controller
 public class HomeController {
 

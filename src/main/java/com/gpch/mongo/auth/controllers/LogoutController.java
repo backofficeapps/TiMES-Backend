@@ -12,6 +12,14 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
+
+/**
+ *
+ * @author Jaidon Jaekel
+ *
+ * This class is the controller for the logout requests.
+ *
+ */
 @SuppressWarnings("unused")
 @Controller
 public class LogoutController implements LogoutSuccessHandler {
@@ -21,6 +29,14 @@ public class LogoutController implements LogoutSuccessHandler {
 
     private final Logger logger = LoggerFactory.getLogger(this.getClass());
 
+    /**
+     * @param req
+     * @param res
+     * @param authentication
+     *
+     * onLogoutSuccess() performs logout requests and returns the user to the homepage
+     *
+     */
     @Override
     public void onLogoutSuccess(HttpServletRequest req, HttpServletResponse res, Authentication authentication) {
         logger.debug("Performing logout");
