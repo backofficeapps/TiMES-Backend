@@ -1,4 +1,5 @@
 # Times-Backend
+![BoB_Logo](/BoB.png)
 ## Description:
 >  This is the backend to the Times application that integrates the following sub-systems:
 >  * Mongodb
