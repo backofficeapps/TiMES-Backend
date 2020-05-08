@@ -8,8 +8,6 @@
   * Employee-Event Scheduling System
 
  Together these make up the backend codebase and logic for the Times application. They enable the application to add and edit events in the database, as well as parse iCalendar information from the client(s) in order to run a scheduling and optimization system on those inputs. In the current iteration the iCalendar event parsing system generates a file that can be fed-in to the scheduler as long as its called independently.
- 
-## Usage:
 
 
 ## Requirements:
@@ -25,8 +23,8 @@
   In order to set up the application, a user must first ensure that they have access to a machine that has Java version 11 enabled along with an install of Apache Maven version 3.5.1.
 Maven Install
 
-  By nature of design, this application is modular and self-containing. This design choice lends itself to less setup requirements for an end user apart from the two core requirements specified above.
-In order to install the dependencies using Maven a user then has to run Maven → Clean and Maven → Install commands to acquire all other dependencies before running the project for the first time. Since this application is a Spring Maven enabled program, all other dependencies will be installed during this process.
+>  By nature of design, this application is modular and self-containing. This design choice lends itself to less setup >requirements for an end user apart from the two core requirements specified above.
+>In order to install the dependencies using Maven a user then has to run Maven → Clean and Maven → Install commands to acquire >all other dependencies before running the project for the first time. Since this application is a Spring Maven enabled >program, all other dependencies will be installed during this process.
 
 
 
